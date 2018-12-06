@@ -1,0 +1,31 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		xmlns:form="sap.ui.layout.form"
+		controllerName="zcompany.CompanyDetails" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+	       <form:SimpleForm>
+	           <form:title>
+	               <core:Title text="Company Details"/>
+	           </form:title>
+	           <form:content>
+	                <Label text="Name"/>
+	                <Text text="{/companyName/name}"/>
+	                <Label text="City"/>
+	                <Text text="{/companyName/city}"/>	                
+	           </form:content>
+	       </form:SimpleForm>
+	       
+	       <form:SimpleForm binding="{/companyName}">
+	           <form:title>
+	               <core:Title text="Company Details"/>
+	           </form:title>
+	           <form:content>
+	                <Label text="Name"/>
+	                <Text text="{name}"/>
+	                <Label text="City"/>
+	                <Text text="{city}"/>	                
+	           </form:content>
+	       </form:SimpleForm>
+		</content>
+	</Page>
+</core:View>
